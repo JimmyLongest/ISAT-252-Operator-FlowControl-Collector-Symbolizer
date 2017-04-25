@@ -1,0 +1,97 @@
+print("Tests count as a total of 60 percent of your grade.")
+
+# define the variables relating to test grades
+a = 0
+b = 0
+c = 0
+z = 0
+
+#input the data for each test
+a = int(input("Enter your grade for the first test: "))
+b = int(input("Enter your grade for the second test: "))
+c = int(input("Enter your grade for the third test: "))
+
+#calculate the average of the exams
+print("60 percent of your grade is equal to:")
+z = (a+b+c)/3
+print z 
+
+print("Homeworks count as a total of 30 percent of your grade.")
+
+#define the variables relating to homeworks 
+d = 0
+e = 0
+f = 0
+g = 0
+h = 0
+i = 0
+y = 0
+
+#input the data for each homework
+d = int(input("Enter your grade for the first homework: "))
+e = int(input("Enter your grade for the second homework: "))
+f = int(input("Enter your grade for the third homework: "))
+g = int(input("Enter your grade for the fourth homework: "))
+h = int(input("Enter your grade for the fifth homework: "))
+i = int(input("Enter your grade for the sixth homework: "))
+
+#calculate the average of the homeworks
+print("30 percent of your grade is equal to:")
+y = (d+e+f+g+h+i)/6
+print y
+
+print("Attendance and participation counts for 10 percent of your grade.")
+
+#define the variables relating to attendance and participation
+j = 0
+k = 0
+l = 0
+m = 0
+n = 0
+o = 0
+p = 0
+q = 0
+r = 0 
+s = 0
+x = 0
+
+#input the data for each attendance and participation day
+j = int(input("Enter your grade for the first attendance/ participation day: "))
+k = int(input("Enter your grade for the second attendance/ participation day: "))
+l = int(input("Enter your grade for the third attendance/ participation day: "))
+m = int(input("Enter your grade for the fourth attendance/ participation day: "))
+n = int(input("Enter your grade for the fifth attendance/ participation day: "))
+o = int(input("Enter your grade for the sixth attendance/ participation day: "))
+p = int(input("Enter your grade for the seventh attendance/ participation day: "))
+q = int(input("Enter your grade for the eigth attendance/ participation day: "))
+r = int(input("Enter your grade for the ninth attendance/ participation day: "))
+s = int(input("Enter your grade for the tenth attendance/ participation day: "))
+
+#calculate the average of the attendance and participation days
+print("10 percent of your grade is equal to:")
+x = (j+k+l+m+n+o+p+q+r+s)/10
+print x
+
+#define the variables in order to calculate the overall final grade
+finalgrade = 0
+
+#calculate the entire grade for the student
+print("Your final grade is:")
+w = (z*0.6)+(y*0.3)+(y*0.1)
+print w
+
+grade = [ 'A', 'B', 'C', 'D', 'F' ] #array of letter grades
+
+if w <= 100 and w > 89:
+	print(grade[0])
+if w <= 89 and w > 79:
+	print(grade[1])
+if w <= 79 and w > 69:
+	print(grade[2])
+if w <= 69 and w > 64:
+	print(grade[3])
+if w <= 64:
+	print(grade[4])
+
+
+print("Thank you for using my Grade Calculator!")
